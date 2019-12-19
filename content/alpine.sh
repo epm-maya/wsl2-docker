@@ -11,14 +11,12 @@ mkdir -p /root
 mkdir -p /var/lib/wsl2-docker
 mkdir -p /usr/local/bin
 
-pushd /root
+cd /root
 
 curl -fLo docker.tgz "https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKERVER}.tgz"
 tar xzf docker.tgz
 mv docker/* /usr/local/bin/
 rm -rf docker
 rm docker.tgz
-
-popd
 
 echo "DONE"
