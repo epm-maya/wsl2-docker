@@ -1,4 +1,3 @@
-#!/bin/sh
 set -ex
 
 DOCKERVER='19.03.5'
