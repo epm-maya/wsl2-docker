@@ -1,5 +1,5 @@
 #!/bin/sh
-set -ex
+set -e
 
 if [ "$(id -u)" != 0 ]; then
 	echo >&2 "error: must be root to invoke $0"
