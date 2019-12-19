@@ -76,9 +76,9 @@ echo "generate OK"
 if [ ! -d "${HOME}/.docker" ]; then
 	mkdir -p ${HOME}/.docker
 	chmod 0700 ${HOME}/.docker
-	cp ca/cert.pem ${HOME}/.docker/ca.pem
-	cp client/cert.pem ${HOME}/.docker/cert.pem
-	cp client/key.pem ${HOME}/.docker/key.pem
+	cp ${CERTDIR}/ca/cert.pem ${HOME}/.docker/ca.pem
+	cp ${CERTDIR}/client/cert.pem ${HOME}/.docker/cert.pem
+	cp ${CERTDIR}/client/key.pem ${HOME}/.docker/key.pem
 
 	chmod 0644 ${HOME}/.docker/ca.pem
 	chmod 0644 ${HOME}/.docker/cert.pem
