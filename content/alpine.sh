@@ -19,4 +19,6 @@ mv docker/* /usr/local/bin/
 rm -rf docker
 rm docker.tgz
 
+addgroup -S docker
+
 echo "DONE"
