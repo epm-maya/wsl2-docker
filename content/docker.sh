@@ -28,7 +28,7 @@ start() {
 	fi
 
 	if [ ! -f "${CERTDIR}/server/key.pem" ]; then
-		EXTRA_ARGS="-H tcp://0.0.0.0:2375"
+		EXTRA_ARGS="-H tcp://127.0.0.1:2375"
 	else
 		EXTRA_ARGS="-H tcp://0.0.0.0:2376 --tlsverify"
 		EXTRA_ARGS="${EXTRA_ARGS} --tlscacert=${CERTDIR}/ca/cert.pem"
