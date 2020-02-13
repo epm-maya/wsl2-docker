@@ -1,6 +1,6 @@
 set -ex
 
-DOCKERVER='19.03.5'
+DOCKERVER='19.03.6'
 
 echo "build in alpine (docker-${DOCKERVER})"
 
